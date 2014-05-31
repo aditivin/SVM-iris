@@ -1,3 +1,13 @@
+################### ABOUT THE PROJECT ###################################
+
+This project is a modified version of the SVM (Support Vector Machine) algorithm. Three key aspects of the traditional algorithm have been altered here:
+	-> The computations are now optimized to work in distributed environments (this code is built for Hadoop)
+	-> SVMs can be built for multi-class datasets
+	-> The algorithm has been modified to reduce the time to test new data points. The time for testing a new data point is more than halved as compared to any of the traditional multi-class SVM methods (one-vs-one and one-vs-all).
+	-> The algorithm has also shown a marked increase in accuracy over the one-vs-one and one-vs-all multi-class SVM methods for non-skewed datasets. For skewed datasets, I'm working on a modification of the algorithm that will show accuracies comparable to the other two methods.
+
+
+
 #################### NOTE : FILES AND DIRECTORIES ####################
 
 All files except final_automate_iris.py and testing_automation_iris.py should be stored in a folder named 'SVM_iris'
